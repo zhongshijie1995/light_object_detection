@@ -5,7 +5,7 @@ gpu_flag = input('Run with GPU? ')
 if gpu_flag is 'y' or 'Y':
     gpu = True
 batch = int(input('How large is each batch? '))
-subdivisions = int(input('How large is each batch?'))
+subdivisions = int(input('How large is subdivision?'))
 max_batches = int(input('How many batches? '))
 
 
