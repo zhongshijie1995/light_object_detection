@@ -34,6 +34,7 @@ mdf_file('voc.data', 'classes', str(n))
 # 修改Makefile
 if gpu:
     mdf_file('Makefile', 'GPU', '1')
+os.system('make')
 
 # 修改yolov3-voc.cfg
 mdf_file('yolov3-voc.cfg', 'batch', str(batch))
