@@ -59,7 +59,7 @@ python3 labelImg.py
 ```
 2. 将上述提及的分类配置、标签文件、图片（相同文件名，不同后缀名）以放入项目的如下结构中
 ```
-- gentle_yolo
+- LightObjectDetection
     - train_data
 	- classes.txt
 	- a.jpg
