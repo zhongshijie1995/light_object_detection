@@ -1,8 +1,11 @@
 .idea
 obj
 
+train_data
+
 darknet
 libdarknet.a
 libdarknet.so
 predictions.jpg
 yolov3.weights
+darknet53.conv.74

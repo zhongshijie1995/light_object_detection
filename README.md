@@ -39,17 +39,21 @@ fim predictions.jpg
 
 ## 训练自己的数据
 ### 数据准备
-#### 方法1：使用标注工具
-1. 标注工具集成在项目中
+#### 0. 下载预训练模型
 ```
-cd labelImg
-python3 labelImg.py
+wget https://pjreddie.com/media/files/darknet53.conv.74
+```
+#### 1. 对图片进行标注
+##### （方法1）使用标注工具
+1. 启动标注工具集
+```
+pip3 install labelImg
+labelImg
 ```
 2. 点击VOC以选择YOLO模式，并进行标注
 3. 完成
 
-
-#### 方法2：自己制作数据集
+#####（方法2）自己制作数据集
 1. 实际上，我们需要的数据集格式是每一张图片对应一个.txt标签文件，其中包含以下信息：
 ```
 <对象的序号> <对象中心点的x坐标> <想象中心点的y坐标> <对象的宽度> <对象的高度>
@@ -59,12 +63,12 @@ python3 labelImg.py
 2. 将上述提及的分类配置、标签文件、图片（相同文件名，不同后缀名）以放入项目的如下结构中
 ```
 - LightObjectDetection
-    - train_data
-	- classes.txt
-	- a.jpg
-	- a.txt
-	- b.jpg
-	- b.txt
+   - train_data
+      - classes.txt
+      - a.jpg
+      - a.txt
+      - b.jpg
+      - b.txt
 ```
 3. 完成！
 
@@ -81,5 +85,3 @@ python3 sc_start_train.py
 
 ### 进行预测
 还记得编译项目之后的上手体验吗？有了模型和训练出来的权重，你应该能完成了！
-
-# 感谢阅读

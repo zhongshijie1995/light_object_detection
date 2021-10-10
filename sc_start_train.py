@@ -2,7 +2,7 @@ import os
 
 gpu = False
 gpu_flag = input('Run with GPU? ')
-if gpu_flag is 'y' or 'Y':
+if gpu_flag.lower() == 'y':
     gpu = True
 batch = int(input('How large is each batch? '))
 subdivisions = int(input('How large is subdivision?'))
