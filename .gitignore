@@ -1,1 +1,8 @@
 .idea
+obj
+
+darknet
+libdarknet.a
+libdarknet.so
+predictions.jpg
+yolov3.weights

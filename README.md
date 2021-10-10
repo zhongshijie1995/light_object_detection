@@ -1,4 +1,4 @@
-# LightObjectDetection
+# light_object_detection
 
 # 介绍
 轻快、简明、高效、精确的深度学习图像目标检测
